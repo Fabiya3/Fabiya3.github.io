@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fabiya Philomina M J | Power BI Data Analyst & Analytics Engineer</title>
+  <meta name="description" content="Portfolio of Fabiya Philomina M J - Certified Microsoft Power BI Data Analyst, Data Modeling, SQL, Python ETL, and Process Automation." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #0b1120;
+      --card-bg: #131c31;
+      --card-border: #23314e;
+      --accent: #38bdf8;
+      --accent-glow: rgba(56, 189, 248, 0.15);
+      --accent-secondary: #818cf8;
+      --text-primary: #f8fafc;
+      --text-secondary: #94a3b8;
+      --text-muted: #64748b;
+      --font-main: 'Inter', -apple-system, sans-serif;
+      --font-code: 'JetBrains Mono', monospace;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: var(--bg);
+      color: var(--text-primary);
+      font-family: var(--font-main);
+      line-height: 1.6;
+      padding: 0 1.5rem;
+    }
+
+    .container {
+      max-width: 1040px;
+      margin: 0 auto;
+      padding: 4.5rem 0 3rem 0;
+    }
+
+    /* Hero Section */
+    header.hero {
+      margin-bottom: 4rem;
+      border-bottom: 1px solid var(--card-border);
+      padding-bottom: 3rem;
+    }
+    .hero-eyebrow {
+      font-family: var(--font-code);
+      color: var(--accent);
+      font-size: 0.9rem;
+      font-weight: 500;
+      margin-bottom: 0.75rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+    .hero h1 {
+      font-size: 3rem;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      margin-bottom: 0.75rem;
+      line-height: 1.15;
+    }
+    .hero-subtitle {
+      font-size: 1.25rem;
+      color: var(--accent-secondary);
+      font-weight: 500;
+      margin-bottom: 1.25rem;
+    }
+    .hero p {
+      font-size: 1.05rem;
+      color: var(--text-secondary);
+      max-width: 820px;
+      margin-bottom: 1.75rem;
+    }
+    .contact-bar {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+      font-family: var(--font-code);
+      font-size: 0.88rem;
+    }
+    .contact-bar a, .contact-bar span {
+      color: var(--text-secondary);
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+    }
+    .contact-bar a:hover {
+      color: var(--accent);
+    }
+    .badge-certified {
+      background: var(--accent-glow);
+      color: var(--accent);
+      border: 1px solid var(--accent);
+      padding: 0.35rem 0.75rem;
+      border-radius: 999px;
+      font-size: 0.8rem;
+      font-family: var(--font-code);
+      display: inline-block;
+      margin-bottom: 1.5rem;
+    }
+
+    /* Section Headers */
+    section {
+      margin-bottom: 4rem;
+    }
+    h2.section-title {
+      font-size: 1.6rem;
+      font-weight: 700;
+      margin-bottom: 1.75rem;
+      letter-spacing: -0.01em;
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      border-bottom: 1px solid var(--card-border);
+      padding-bottom: 0.75rem;
+    }
+    h2.section-title::before {
+      content: "#";
+      color: var(--accent);
+      font-family: var(--font-code);
+    }
+
+    /* Skills Grid */
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+      gap: 1.25rem;
+    }
+    .skill-card {
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: 8px;
+      padding: 1.25rem;
+    }
+    .skill-card h3 {
+      font-size: 0.95rem;
+      color: var(--accent);
+      margin-bottom: 0.75rem;
+      font-family: var(--font-code);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+    .skill-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.45rem;
+    }
+    .tag {
+      background: #0b1120;
+      color: var(--text-secondary);
+      font-size: 0.8rem;
+      padding: 0.25rem 0.55rem;
+      border-radius: 4px;
+      border: 1px solid #1e293b;
+      font-family: var(--font-code);
+    }
+
+    /* Projects */
+    .project-card {
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: 10px;
+      padding: 1.75rem;
+      margin-bottom: 1.75rem;
+      transition: border-color 0.2s, transform 0.2s;
+    }
+    .project-card:hover {
+      border-color: var(--accent);
+      transform: translateY(-2px);
+    }
+    .project-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-bottom: 0.75rem;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+    }
+    .project-title {
+      font-size: 1.35rem;
+      font-weight: 600;
+      color: var(--text-primary);
+    }
+    .project-tech {
+      font-family: var(--font-code);
+      font-size: 0.82rem;
+      color: var(--accent-secondary);
+      margin-bottom: 1rem;
+    }
+    .project-links a {
+      color: var(--accent);
+      text-decoration: none;
+      font-family: var(--font-code);
+      font-size: 0.85rem;
+      padding: 0.25rem 0.6rem;
+      border: 1px solid var(--card-border);
+      border-radius: 4px;
+      transition: background 0.2s, border-color 0.2s;
+    }
+    .project-links a:hover {
+      background: var(--accent-glow);
+      border-color: var(--accent);
+    }
+    .project-desc {
+      color: var(--text-secondary);
+      font-size: 0.95rem;
+      margin-bottom: 1rem;
+    }
+    .project-bullets {
+      list-style-type: none;
+    }
+    .project-bullets li {
+      position: relative;
+      padding-left: 1.4rem;
+      margin-bottom: 0.45rem;
+      color: var(--text-secondary);
+      font-size: 0.92rem;
+    }
+    .project-bullets li::before {
+      content: "▹";
+      position: absolute;
+      left: 0;
+      color: var(--accent);
+    }
+
+    /* Experience & Education */
+    .timeline-item {
+      border-left: 2px solid var(--card-border);
+      padding-left: 1.5rem;
+      position: relative;
+      margin-bottom: 2rem;
+    }
+    .timeline-item::before {
+      content: "";
+      position: absolute;
+      left: -6px;
+      top: 5px;
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: var(--accent);
+    }
+    .timeline-role {
+      font-size: 1.15rem;
+      font-weight: 600;
+    }
+    .timeline-company {
+      color: var(--accent);
+      font-weight: 500;
+      font-size: 0.95rem;
+    }
+    .timeline-meta {
+      font-family: var(--font-code);
+      font-size: 0.82rem;
+      color: var(--text-muted);
+      margin-bottom: 0.75rem;
+    }
+    .timeline-bullets {
+      list-style-type: none;
+    }
+    .timeline-bullets li {
+      position: relative;
+      padding-left: 1.3rem;
+      margin-bottom: 0.4rem;
+      color: var(--text-secondary);
+      font-size: 0.92rem;
+    }
+    .timeline-bullets li::before {
+      content: "•";
+      position: absolute;
+      left: 0;
+      color: var(--accent);
+    }
+
+    /* Certifications Grid */
+    .cert-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 1rem;
+    }
+    .cert-card {
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      padding: 1rem 1.25rem;
+      border-radius: 6px;
+    }
+    .cert-title {
+      font-size: 0.95rem;
+      font-weight: 600;
+      color: var(--text-primary);
+    }
+    .cert-issuer {
+      font-size: 0.82rem;
+      color: var(--accent);
+      font-family: var(--font-code);
+      margin-top: 0.2rem;
+    }
+
+    /* Footer */
+    footer {
+      border-top: 1px solid var(--card-border);
+      padding-top: 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 1rem;
+      color: var(--text-muted);
+      font-size: 0.85rem;
+      font-family: var(--font-code);
+    }
+    footer a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    
+    <!-- Hero Header -->
+    <header class="hero">
+      <div class="hero-eyebrow">// PORTFOLIO & WORKBENCH</div>
+      <h1>Fabiya Philomina M J</h1>
+      <div class="hero-subtitle">Power BI Data Analyst • Analytics Engineer • Process Automation</div>
+      
+      <div class="badge-certified">Certified Microsoft Power BI Data Analyst</div>
+
+      <p>
+        Computer Science graduate and data analyst experienced in building business intelligence architectures, automated reporting pipelines, and interactive dashboard systems. Specialized in Kimball Star Schema modeling, Power BI DAX measures, relational SQL databases, and Python/Selenium workflows at BPCL Kochi Refinery.
+      </p>
+
+      <div class="contact-bar">
+        <a href="mailto:fabiyaphilomina@gmail.com">✉ fabiyaphilomina@gmail.com</a>
+        <a href="tel:+917907896525">✆ (+91) 7907896525</a>
+        <span>📍 Kochi, Kerala, India</span>
+        <a href="https://github.com/Fabiya3" target="_blank">⌨ github.com/Fabiya3</a>
+      </div>
+    </header>
+
+    <!-- Technical Competencies -->
+    <section>
+      <h2 class="section-title">Core Competencies</h2>
+      <div class="skills-grid">
+        <div class="skill-card">
+          <h3>BI & Visualization</h3>
+          <div class="skill-tags">
+            <span class="tag">Power BI Desktop</span>
+            <span class="tag">DAX Measures</span>
+            <span class="tag">Power Query (M)</span>
+            <span class="tag">Star Schema Modeling</span>
+            <span class="tag">Executive Reporting</span>
+            <span class="tag">VertiPaq Engine</span>
+          </div>
+        </div>
+        <div class="skill-card">
+          <h3>Databases & Querying</h3>
+          <div class="skill-tags">
+            <span class="tag">SQL (Window/CTEs)</span>
+            <span class="tag">Microsoft SQL Server</span>
+            <span class="tag">SQLite DDL & Constraints</span>
+            <span class="tag">Star Schema DDL</span>
+            <span class="tag">Relational Integration</span>
+          </div>
+        </div>
+        <div class="skill-card">
+          <h3>Automation & Scripting</h3>
+          <div class="skill-tags">
+            <span class="tag">Power Automate</span>
+            <span class="tag">Excel VBA Macros</span>
+            <span class="tag">Python (Pandas/NumPy)</span>
+            <span class="tag">Selenium Automation</span>
+            <span class="tag">Process Optimization</span>
+          </div>
+        </div>
+        <div class="skill-card">
+          <h3>Spreadsheet & Analysis</h3>
+          <div class="skill-tags">
+            <span class="tag">Advanced Excel</span>
+            <span class="tag">Pivot Tables</span>
+            <span class="tag">Exploratory Data Analysis</span>
+            <span class="tag">IQR Outlier Detection</span>
+            <span class="tag">Data Hygiene & Cleaning</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Projects -->
+    <section>
+      <h2 class="section-title">Featured Projects</h2>
+
+      <!-- Project 1: Retail Fulfillment Analytics -->
+      <div class="project-card">
+        <div class="project-header">
+          <div>
+            <div class="project-title">Multi-Channel Retail & Fulfillment Analytics Platform</div>
+            <div class="project-tech">Python (Vectorized ETL) • SQLite (Star Schema) • Analytical SQL • Power BI Desktop (DAX)</div>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/Fabiya3/retail-fulfillment-analytics" target="_blank">View Code ↗</a>
+          </div>
+        </div>
+        <p class="project-desc">
+          Engineered an end-to-end relational data warehousing and business intelligence solution on over 500,000 authentic e-commerce transactional records (Online Retail II dataset), isolating product return drag and customer reorder lifecycles.
+        </p>
+        <ul class="project-bullets">
+          <li>Built a vectorized Python data pipeline applying ISO-8859-1 encoding, customer validation, and 3x IQR statistical screening to identify extreme wholesale outlier orders without dropping variance.</li>
+          <li>Constructed a normalized Kimball Star Schema in SQLite (<code>fact_order_lines</code>, <code>dim_customers</code>, <code>dim_products</code>, <code>dim_dates</code>) enforcing foreign key relational integrity and query indexes.</li>
+          <li>Authored analytical SQL models using <code>LAG()</code> window functions for customer purchase intervals and <code>NTILE(4)</code> for composite RFM customer segmentation.</li>
+          <li>Designed a 2-page Power BI dashboard (Executive Performance Summary & Operational Returns Diagnostic) featuring boolean-safe DAX measures for Realized Revenue, Cancelled Revenue Loss, and SPLY comparisons.</li>
+        </ul>
+      </div>
+
+      <!-- Project 2: Automated Reporting Pipeline (BPCL) -->
+      <div class="project-card">
+        <div class="project-header">
+          <div>
+            <div class="project-title">Enterprise Automated Reporting Pipeline</div>
+            <div class="project-tech">Microsoft Power Automate • Excel VBA • Data Validation</div>
+          </div>
+        </div>
+        <p class="project-desc">
+          Architected an automated reporting system connecting Microsoft Power Automate with macro-enabled Excel workbooks powered by custom VBA routines.
+        </p>
+        <ul class="project-bullets">
+          <li>Automated routine data extraction, transformation, layout formatting, and scheduled distribution to stakeholders.</li>
+          <li>Eliminated repetitive manual spreadsheet updates, standardizing reporting formatting and significantly shortening daily turnaround time.</li>
+        </ul>
+      </div>
+
+      <!-- Project 3: Sales Performance & Customer Insights Dashboard -->
+      <div class="project-card">
+        <div class="project-header">
+          <div>
+            <div class="project-title">Sales Performance & Customer Insights Dashboard</div>
+            <div class="project-tech">Power BI Desktop • Power Query • Advanced DAX • Excel</div>
+          </div>
+        </div>
+        <p class="project-desc">
+          Connected Power BI Desktop to multi-table retail sales datasets, applying Power Query transformations to shape and clean the semantic data model.
+        </p>
+        <ul class="project-bullets">
+          <li>Developed explicit DAX calculated measures and columns to monitor revenue growth, regional sales distribution, and customer segment metrics.</li>
+          <li>Configured interactive slicers, drill-through analytical paths, and custom KPI card layouts for executive review.</li>
+        </ul>
+      </div>
+
+      <!-- Project 4: Enterprise Web Process Automation -->
+      <div class="project-card">
+        <div class="project-header">
+          <div>
+            <div class="project-title">Enterprise Web Process Automation</div>
+            <div class="project-tech">Python • Selenium WebDriver • ChromeDriver</div>
+          </div>
+        </div>
+        <p class="project-desc">
+          Built an automated browser workflow to eliminate manual data entry and repetitive operations across enterprise web applications.
+        </p>
+        <ul class="project-bullets">
+          <li>Programmed robust authentication scripts for secure enterprise portal logins.</li>
+          <li>Automated multi-page traversal and scheduled document and data file uploads without requiring manual intervention, reducing operational friction.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Professional Experience -->
+    <section>
+      <h2 class="section-title">Professional Experience</h2>
+
+      <div class="timeline-item">
+        <div class="timeline-role">Trainee – Digital Department</div>
+        <div class="timeline-company">Bharat Petroleum Corporation Limited (BPCL) Kochi Refinery</div>
+        <div class="timeline-meta">Dec 2025 – Present | Kochi, India</div>
+        <ul class="timeline-bullets">
+          <li>Engineered an automated reporting pipeline integrating Power Automate with Microsoft Excel and VBA macros, automating routine data extraction, formatting, and scheduled distribution.</li>
+          <li>Collected, cleaned, transformed, and validated multi-source operational datasets using Power Query and SQL to maintain reporting accuracy and schema consistency.</li>
+          <li>Developed and deployed interactive Power BI dashboards and visual reports to monitor plant operational KPIs and support data-driven decision-making.</li>
+          <li>Built automated web process pipelines using Python and Selenium for secure portal authentications, scheduled data retrieval, and automated file transfers.</li>
+          <li>Collaborated with cross-functional users to gather functional reporting specifications and translate business logic into automated analytics solutions.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Certifications -->
+    <section>
+      <h2 class="section-title">Certifications</h2>
+      <div class="cert-grid">
+        <div class="cert-card">
+          <div class="cert-title">Microsoft Power BI Data Analyst Professional Certificate</div>
+          <div class="cert-issuer">Microsoft</div>
+        </div>
+        <div class="cert-card">
+          <div class="cert-title">Databases and SQL for Data Science with Python</div>
+          <div class="cert-issuer">IBM</div>
+        </div>
+        <div class="cert-card">
+          <div class="cert-title">Introduction to Python</div>
+          <div class="cert-issuer">Infosys Springboard</div>
+        </div>
+        <div class="cert-card">
+          <div class="cert-title">Artificial Intelligence Foundation Certificate</div>
+          <div class="cert-issuer">Infosys Springboard</div>
+        </div>
+        <div class="cert-card">
+          <div class="cert-title">Fundamentals of Artificial Intelligence</div>
+          <div class="cert-issuer">NPTEL</div>
+        </div>
+        <div class="cert-card">
+          <div class="cert-title">Data Science Certification</div>
+          <div class="cert-issuer">Avodha</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education -->
+    <section>
+      <h2 class="section-title">Education</h2>
+      <div class="timeline-item">
+        <div class="timeline-role">BTech in Computer Science & Engineering (CGPA: 8.87)</div>
+        <div class="timeline-company">Adi Shankara Institute of Engineering and Technology</div>
+        <div class="timeline-meta">Graduated April 2025</div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-role">Higher Secondary Education (97%)</div>
+        <div class="timeline-company">St. Teresa's Higher Secondary School, Ernakulam</div>
+        <div class="timeline-meta">Completed March 2021</div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div>Designed & Built by Fabiya Philomina M J</div>
+      <div>Hosted on <a href="https://github.com/Fabiya3/Fabiya3.github.io" target="_blank">GitHub Pages</a></div>
+    </footer>
+
+  </div>
+
+</body>
+</html>
