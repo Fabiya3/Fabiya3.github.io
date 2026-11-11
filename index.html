@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Fabiya Philomina M J | Power BI Data Analyst & Analytics Engineer</title>
-  <meta name="description" content="Portfolio of Fabiya Philomina M J - Certified Microsoft Power BI Data Analyst, Data Modeling, SQL, Python ETL, and Process Automation." />
+  <meta name="description" content="Portfolio of Fabiya Philomina M J - Certified Microsoft Power BI Data Analyst, ML Anomaly Detection, SQL Warehousing, and Enterprise Process Automation." />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
@@ -14,7 +14,7 @@
       --card-bg: #131c31;
       --card-border: #23314e;
       --accent: #38bdf8;
-      --accent-glow: rgba(56, 189, 248, 0.15);
+      --accent-glow: rgba(56, 189, 248, 0.12);
       --accent-secondary: #818cf8;
       --text-primary: #f8fafc;
       --text-secondary: #94a3b8;
@@ -52,21 +52,21 @@
     .hero-eyebrow {
       font-family: var(--font-code);
       color: var(--accent);
-      font-size: 0.9rem;
+      font-size: 0.85rem;
       font-weight: 500;
       margin-bottom: 0.75rem;
       letter-spacing: 0.08em;
       text-transform: uppercase;
     }
     .hero h1 {
-      font-size: 3rem;
+      font-size: 2.85rem;
       font-weight: 700;
       letter-spacing: -0.02em;
       margin-bottom: 0.75rem;
       line-height: 1.15;
     }
     .hero-subtitle {
-      font-size: 1.25rem;
+      font-size: 1.2rem;
       color: var(--accent-secondary);
       font-weight: 500;
       margin-bottom: 1.25rem;
@@ -111,7 +111,7 @@
       margin-bottom: 4rem;
     }
     h2.section-title {
-      font-size: 1.6rem;
+      font-size: 1.5rem;
       font-weight: 700;
       margin-bottom: 1.75rem;
       letter-spacing: -0.01em;
@@ -140,7 +140,7 @@
       padding: 1.25rem;
     }
     .skill-card h3 {
-      font-size: 0.95rem;
+      font-size: 0.9rem;
       color: var(--accent);
       margin-bottom: 0.75rem;
       font-family: var(--font-code);
@@ -168,7 +168,7 @@
       border: 1px solid var(--card-border);
       border-radius: 10px;
       padding: 1.75rem;
-      margin-bottom: 1.75rem;
+      margin-bottom: 2rem;
       transition: border-color 0.2s, transform 0.2s;
     }
     .project-card:hover {
@@ -179,12 +179,12 @@
       display: flex;
       justify-content: space-between;
       align-items: flex-start;
-      margin-bottom: 0.75rem;
+      margin-bottom: 0.5rem;
       flex-wrap: wrap;
       gap: 0.5rem;
     }
     .project-title {
-      font-size: 1.35rem;
+      font-size: 1.3rem;
       font-weight: 600;
       color: var(--text-primary);
     }
@@ -194,19 +194,15 @@
       color: var(--accent-secondary);
       margin-bottom: 1rem;
     }
-    .project-links a {
-      color: var(--accent);
-      text-decoration: none;
+    .project-badge {
       font-family: var(--font-code);
-      font-size: 0.85rem;
-      padding: 0.25rem 0.6rem;
+      font-size: 0.8rem;
+      color: var(--accent);
       border: 1px solid var(--card-border);
-      border-radius: 4px;
-      transition: background 0.2s, border-color 0.2s;
-    }
-    .project-links a:hover {
       background: var(--accent-glow);
-      border-color: var(--accent);
+      padding: 0.25rem 0.6rem;
+      border-radius: 4px;
+      text-decoration: none;
     }
     .project-desc {
       color: var(--text-secondary);
@@ -219,7 +215,7 @@
     .project-bullets li {
       position: relative;
       padding-left: 1.4rem;
-      margin-bottom: 0.45rem;
+      margin-bottom: 0.5rem;
       color: var(--text-secondary);
       font-size: 0.92rem;
     }
@@ -282,7 +278,7 @@
     /* Certifications Grid */
     .cert-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
       gap: 1rem;
     }
     .cert-card {
@@ -335,7 +331,7 @@
       <div class="badge-certified">Certified Microsoft Power BI Data Analyst</div>
 
       <p>
-        Computer Science graduate and data analyst experienced in building business intelligence architectures, automated reporting pipelines, and interactive dashboard systems. Specialized in Kimball Star Schema modeling, Power BI DAX measures, relational SQL databases, and Python/Selenium workflows at BPCL Kochi Refinery.
+        Computer Science graduate and data analyst experienced in building enterprise business intelligence architectures, machine learning anomaly detection pipelines, and automated operational reporting workflows at BPCL Kochi Refinery. Specialized in Star Schema dimensional modeling, Power BI DAX measures, automated PowerShell data ingestion, and Python automation.
       </p>
 
       <div class="contact-bar">
@@ -362,55 +358,87 @@
           </div>
         </div>
         <div class="skill-card">
-          <h3>Databases & Querying</h3>
+          <h3>Machine Learning & Python</h3>
+          <div class="skill-tags">
+            <span class="tag">Isolation Forest</span>
+            <span class="tag">Anomaly Detection</span>
+            <span class="tag">Pandas / NumPy</span>
+            <span class="tag">Centralized Data Cleaning</span>
+            <span class="tag">Scikit-Learn</span>
+            <span class="tag">Autoencoders</span>
+          </div>
+        </div>
+        <div class="skill-card">
+          <h3>Databases & Warehousing</h3>
           <div class="skill-tags">
             <span class="tag">SQL (Window/CTEs)</span>
+            <span class="tag">SQLite DDL & Indexes</span>
             <span class="tag">Microsoft SQL Server</span>
-            <span class="tag">SQLite DDL & Constraints</span>
-            <span class="tag">Star Schema DDL</span>
-            <span class="tag">Relational Integration</span>
+            <span class="tag">Relational Constraints</span>
+            <span class="tag">RFM Segmentation</span>
           </div>
         </div>
         <div class="skill-card">
-          <h3>Automation & Scripting</h3>
-          <div class="skill-tags">
-            <span class="tag">Power Automate</span>
-            <span class="tag">Excel VBA Macros</span>
-            <span class="tag">Python (Pandas/NumPy)</span>
-            <span class="tag">Selenium Automation</span>
-            <span class="tag">Process Optimization</span>
-          </div>
-        </div>
-        <div class="skill-card">
-          <h3>Spreadsheet & Analysis</h3>
-          <div class="skill-tags">
-            <span class="tag">Advanced Excel</span>
-            <span class="tag">Pivot Tables</span>
-            <span class="tag">Exploratory Data Analysis</span>
-            <span class="tag">IQR Outlier Detection</span>
-            <span class="tag">Data Hygiene & Cleaning</span>
-          </div>
-        </div>
-      </div>
-      <div class="skill-card">
           <h3>Automation & Scripting</h3>
           <div class="skill-tags">
             <span class="tag">PowerShell Scripting</span>
             <span class="tag">Power Automate</span>
             <span class="tag">Excel VBA Macros</span>
-            <span class="tag">Python (Pandas/NumPy)</span>
-            <span class="tag">Selenium Automation</span>
-            <span class="tag">Automated Scheduled Refresh</span>
+            <span class="tag">Selenium WebDriver</span>
+            <span class="tag">Hourly Scheduled Refreshes</span>
           </div>
         </div>
+      </div>
     </section>
-    
 
     <!-- Featured Projects -->
     <section>
       <h2 class="section-title">Featured Projects</h2>
 
-      <!-- Project 1: Retail Fulfillment Analytics -->
+      <!-- Project 1: RISE (ML Anomaly Detection for Refinery Pumps) -->
+      <div class="project-card">
+        <div class="project-header">
+          <div>
+            <div class="project-title">Project RISE: Industrial Pump Anomaly Detection System</div>
+            <div class="project-tech">Python • Isolation Forest • Pandas Data Pipelines • Industrial Sensor Data • ML Anomaly Detection</div>
+          </div>
+          <div class="project-links">
+            <span class="project-badge">Refinery Equipment Reliability</span>
+          </div>
+        </div>
+        <p class="project-desc">
+          Engineered an end-to-end predictive maintenance and machine learning framework to monitor operational health and detect non-linear behavioral anomalies across 5 distinct plant pumps at BPCL Kochi Refinery.
+        </p>
+        <ul class="project-bullets">
+          <li><strong>Unified Data Cleaning Pipeline:</strong> Architected a centralized Python pre-processing module to merge, standardize, and clean raw operational sensor logs across all pump assets simultaneously, eliminating duplicate transformation logic and handling missing intervals.</li>
+          <li><strong>5 Dedicated Isolation Forest Models:</strong> Trained and deployed 5 distinct Isolation Forest machine learning models—one custom-calibrated for each pump's unique operating range, baseline pressure, and vibration patterns.</li>
+          <li><strong>Outlier & Failure Identification:</strong> Established dynamic anomaly score thresholds to flag early mechanical and operational deviations prior to physical trip events, enabling proactive maintenance scheduling.</li>
+        </ul>
+      </div>
+
+      <!-- Project 2: KR Reliability Data Dashboard & Compliance Engine (BPCL) -->
+      <div class="project-card">
+        <div class="project-header">
+          <div>
+            <div class="project-title">Kochi Refinery (KR) Plant Reliability & Automated Compliance Engine</div>
+            <div class="project-tech">Power BI Desktop • DAX Measures • Power Query • Excel VBA Macros • PowerShell Scripting</div>
+          </div>
+          <div class="project-links">
+            <span class="project-badge">BPCL Digital Department</span>
+          </div>
+        </div>
+        <p class="project-desc">
+          Architected an automated operational compliance and plant reliability intelligence system tracking daily log submissions across process units (such as CDU1, CDU2, CDU3, SRU3, FCCU, and PDA) and monitoring high-risk plant assets.
+        </p>
+        <ul class="project-bullets">
+          <li><strong>Unit Compliance Logic:</strong> Formulated automated validation rules to verify whether all daily operational parameters were entered by unit teams; engineered logic that benchmarks completion to display 100% compliance only when all requirements for that operational day are satisfied.</li>
+          <li><strong>Automated Ingestion & Refresh Pipeline:</strong> Deployed PowerShell background scripts to trigger frequent automated saves of source Excel workbooks, coupled with 1-hour recurring Power Query refreshes to maintain near real-time operational synchronization.</li>
+          <li><strong>High-Value Risk & Exposure Tracking:</strong> Modeled and tracked critical plant reliability parameters, monitoring 160+ Priority-1 incidents representing over ₹1,836.5 Crores in potential plant loss exposure.</li>
+          <li><strong>Incident Bucketing & Root-Cause Analytics:</strong> Categorized mechanical, electrical, instrumentation, and rotary failures across maintenance buckets (single point failure, pump capacity, CV/SDV issues, hotspots/leaks, corrosion) to monitor overdue vs. completed actions.</li>
+        </ul>
+      </div>
+
+      <!-- Project 3: Retail Fulfillment Analytics -->
       <div class="project-card">
         <div class="project-header">
           <div>
@@ -418,7 +446,7 @@
             <div class="project-tech">Python (Vectorized ETL) • SQLite (Star Schema) • Analytical SQL • Power BI Desktop (DAX)</div>
           </div>
           <div class="project-links">
-            <a href="https://github.com/Fabiya3/retail-fulfillment-analytics" target="_blank">View Code ↗</a>
+            <a href="https://github.com/Fabiya3/retail-fulfillment-analytics" target="_blank" class="project-badge">View Repository ↗</a>
           </div>
         </div>
         <p class="project-desc">
@@ -432,46 +460,15 @@
         </ul>
       </div>
 
-      <!-- Project 2: Automated Reporting Pipeline (BPCL) -->
-      <div class="project-card">
-        <div class="project-header">
-          <div>
-            <div class="project-title">Enterprise Automated Reporting Pipeline</div>
-            <div class="project-tech">Microsoft Power Automate • Excel VBA • Data Validation</div>
-          </div>
-        </div>
-        <p class="project-desc">
-          Architected an automated reporting system connecting Microsoft Power Automate with macro-enabled Excel workbooks powered by custom VBA routines.
-        </p>
-        <ul class="project-bullets">
-          <li>Automated routine data extraction, transformation, layout formatting, and scheduled distribution to stakeholders.</li>
-          <li>Eliminated repetitive manual spreadsheet updates, standardizing reporting formatting and significantly shortening daily turnaround time.</li>
-        </ul>
-      </div>
-
-      <!-- Project 3: Sales Performance & Customer Insights Dashboard -->
-      <div class="project-card">
-        <div class="project-header">
-          <div>
-            <div class="project-title">Sales Performance & Customer Insights Dashboard</div>
-            <div class="project-tech">Power BI Desktop • Power Query • Advanced DAX • Excel</div>
-          </div>
-        </div>
-        <p class="project-desc">
-          Connected Power BI Desktop to multi-table retail sales datasets, applying Power Query transformations to shape and clean the semantic data model.
-        </p>
-        <ul class="project-bullets">
-          <li>Developed explicit DAX calculated measures and columns to monitor revenue growth, regional sales distribution, and customer segment metrics.</li>
-          <li>Configured interactive slicers, drill-through analytical paths, and custom KPI card layouts for executive review.</li>
-        </ul>
-      </div>
-
       <!-- Project 4: Enterprise Web Process Automation -->
       <div class="project-card">
         <div class="project-header">
           <div>
             <div class="project-title">Enterprise Web Process Automation</div>
-            <div class="project-tech">Python • Selenium WebDriver • ChromeDriver</div>
+            <div class="project-tech">Python • Selenium WebDriver • ChromeDriver • Enterprise Workflows</div>
+          </div>
+          <div class="project-links">
+            <span class="project-badge">Process Streamlining</span>
           </div>
         </div>
         <p class="project-desc">
@@ -482,28 +479,6 @@
           <li>Automated multi-page traversal and scheduled document and data file uploads without requiring manual intervention, reducing operational friction.</li>
         </ul>
       </div>
-
-      <!-- Project: KR Reliability Data Dashboard (BPCL) -->
-      <div class="project-card">
-        <div class="project-header">
-          <div>
-            <div class="project-title">Kochi Refinery (KR) Plant Reliability & Automated Compliance Engine</div>
-            <div class="project-tech">Power BI Desktop • DAX Measures • Power Query • Excel VBA Macros • PowerShell Scripting</div>
-          </div>
-          <div class="project-links">
-            <span style="font-family: var(--font-code); font-size: 0.8rem; color: #38bdf8; border: 1px solid #334155; padding: 0.2rem 0.5rem; border-radius: 4px;">BPCL Digital Initiative</span>
-          </div>
-        </div>
-        <p class="project-desc">
-          Architected an automated operational monitoring and data ingestion engine for BPCL Kochi Refinery to audit daily log completeness across process units (such as CDU1, CDU3, SRU3, and PDA) and track plant equipment failure risks.
-        </p>
-        <ul class="project-bullets">
-          <li><strong>Unit Compliance Logic:</strong> Formulated automated validation rules to verify whether all daily operational parameters were submitted by unit teams; engineered logic that benchmarks completion to display 100% compliance only when all requirements for that operational day are satisfied.</li>
-          <li><strong>Automated Ingestion & Refresh Pipeline:</strong> Deployed PowerShell background scripts to trigger frequent automated saves of source Excel workbooks, coupled with 1-hour recurring Power Query refreshes to maintain near real-time operational synchronization.</li>
-          <li><strong>High-Value Risk & Exposure Tracking:</strong> Modeled and tracked critical plant reliability parameters, monitoring 160+ Priority-1 incidents representing over ₹1,836.5 Crores in potential plant loss exposure.</li>
-          <li><strong>Incident Bucketing & Root-Cause Analytics:</strong> Categorized mechanical, electrical, instrumentation, and rotary failures across maintenance buckets (single point failure, pump capacity, CV/SDV issues, hotspots/leaks, corrosion) to monitor overdue vs. completed actions.</li>
-        </ul>
-      </div>
     </section>
 
     <!-- Professional Experience -->
@@ -511,12 +486,12 @@
       <h2 class="section-title">Professional Experience</h2>
 
       <div class="timeline-item">
-        <div class="timeline-item">
         <div class="timeline-role">Trainee – Digital Department</div>
         <div class="timeline-company">Bharat Petroleum Corporation Limited (BPCL) Kochi Refinery</div>
         <div class="timeline-meta">Dec 2025 – Present | Kochi, India</div>
         <ul class="timeline-bullets">
           <li>Developed and deployed the <strong>KR Reliability Data Dashboard</strong> in Power BI, tracking daily log completeness across process units (CDU1, CDU3, SRU3) and monitoring ₹1,836.5 Cr in potential plant reliability loss exposure.</li>
+          <li>Engineered <strong>Project RISE</strong>: developed a centralized Python data cleaning pipeline and trained 5 dedicated <strong>Isolation Forest ML models</strong> to predict equipment anomalies across 5 industrial pumps.</li>
           <li>Configured scheduled data synchronization utilizing <strong>PowerShell scripts</strong> for automated workbook saves alongside <strong>1-hour recurring Power Query refreshes</strong> in Excel and Power BI.</li>
           <li>Engineered an automated reporting pipeline integrating Power Automate with Microsoft Excel and VBA macros, automating routine data extraction, formatting, and scheduled distribution.</li>
           <li>Collected, cleaned, transformed, and validated multi-source operational datasets using Power Query and SQL to maintain reporting accuracy and schema consistency.</li>
